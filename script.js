@@ -6,6 +6,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function(e
   const date = document.getElementById("date").value;
   const message = document.getElementById("message");
 
+  // Basic validation
   if (!name || !email || !date) {
     message.style.color = "red";
     message.textContent = "Please fill in all fields.";
